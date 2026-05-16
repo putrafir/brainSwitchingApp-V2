@@ -3,24 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		046A85822DD57FAF00B8CF6E /* TimeDelayNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 046A85812DD57FAF00B8CF6E /* TimeDelayNotification.swift */; };
-		04888B872DD23CDF00366789 /* Jadwal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04888B862DD23CDF00366789 /* Jadwal.swift */; };
-		04888B892DD23D3900366789 /* AddJadwalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04888B882DD23D3900366789 /* AddJadwalView.swift */; };
+		04888B872DD23CDF00366789 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04888B862DD23CDF00366789 /* Models.swift */; };
 		04FE7A722DD1236500D51E3C /* brain_switchingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE7A712DD1236500D51E3C /* brain_switchingAppApp.swift */; };
-		04FE7A742DD1236500D51E3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE7A732DD1236500D51E3C /* ContentView.swift */; };
-		04FE7A762DD1236500D51E3C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE7A752DD1236500D51E3C /* Item.swift */; };
 		04FE7A782DD1236600D51E3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FE7A772DD1236600D51E3C /* Assets.xcassets */; };
 		04FE7A7C2DD1236600D51E3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04FE7A7B2DD1236600D51E3C /* Preview Assets.xcassets */; };
 		04FE7A862DD1236600D51E3C /* brain_switchingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE7A852DD1236600D51E3C /* brain_switchingAppTests.swift */; };
 		04FE7A902DD1236600D51E3C /* brain_switchingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE7A8F2DD1236600D51E3C /* brain_switchingAppUITests.swift */; };
 		04FE7A922DD1236600D51E3C /* brain_switchingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE7A912DD1236600D51E3C /* brain_switchingAppUITestsLaunchTests.swift */; };
-		04FE7AA02DD1274F00D51E3C /* TimeDelayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE7A9F2DD1274F00D51E3C /* TimeDelayView.swift */; };
-		04FE7AA22DD127C500D51E3C /* CalendarHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE7AA12DD127C500D51E3C /* CalendarHeaderView.swift */; };
-		04FE7AA42DD127FD00D51E3C /* TaskCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE7AA32DD127FD00D51E3C /* TaskCardView.swift */; };
+		C71315DC2FB86153008A01AB /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A271232FB84ED4000CD251 /* WidgetKit.framework */; };
+		C71315DD2FB86153008A01AB /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7A271252FB84ED5000CD251 /* SwiftUI.framework */; };
+		C71315EA2FB86156008A01AB /* TimerWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C71315DB2FB86153008A01AB /* TimerWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C71315EF2FB8616E008A01AB /* TimerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A2711B2FB84E81000CD251 /* TimerAttributes.swift */; };
+		C7A2710B2FB849CF000CD251 /* SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A2710A2FB849C4000CD251 /* SessionManager.swift */; };
+		C7A2711C2FB84E82000CD251 /* TimerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7A2711B2FB84E81000CD251 /* TimerAttributes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,16 +37,33 @@
 			remoteGlobalIDString = 04FE7A6D2DD1236500D51E3C;
 			remoteInfo = brain_switchingApp;
 		};
+		C71315E82FB86156008A01AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 04FE7A662DD1236500D51E3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C71315DA2FB86153008A01AB;
+			remoteInfo = TimerWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C7A2713C2FB84ED7000CD251 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C71315EA2FB86156008A01AB /* TimerWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		046A85812DD57FAF00B8CF6E /* TimeDelayNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDelayNotification.swift; sourceTree = "<group>"; };
-		04888B862DD23CDF00366789 /* Jadwal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jadwal.swift; sourceTree = "<group>"; };
-		04888B882DD23D3900366789 /* AddJadwalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJadwalView.swift; sourceTree = "<group>"; };
+		04888B862DD23CDF00366789 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		04FE7A6E2DD1236500D51E3C /* brain_switchingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = brain_switchingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FE7A712DD1236500D51E3C /* brain_switchingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brain_switchingAppApp.swift; sourceTree = "<group>"; };
-		04FE7A732DD1236500D51E3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		04FE7A752DD1236500D51E3C /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		04FE7A772DD1236600D51E3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04FE7A792DD1236600D51E3C /* brain_switchingApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = brain_switchingApp.entitlements; sourceTree = "<group>"; };
 		04FE7A7B2DD1236600D51E3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -56,10 +72,28 @@
 		04FE7A8B2DD1236600D51E3C /* brain_switchingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = brain_switchingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04FE7A8F2DD1236600D51E3C /* brain_switchingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brain_switchingAppUITests.swift; sourceTree = "<group>"; };
 		04FE7A912DD1236600D51E3C /* brain_switchingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brain_switchingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		04FE7A9F2DD1274F00D51E3C /* TimeDelayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDelayView.swift; sourceTree = "<group>"; };
-		04FE7AA12DD127C500D51E3C /* CalendarHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarHeaderView.swift; sourceTree = "<group>"; };
-		04FE7AA32DD127FD00D51E3C /* TaskCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCardView.swift; sourceTree = "<group>"; };
+		C71315DB2FB86153008A01AB /* TimerWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TimerWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7A2710A2FB849C4000CD251 /* SessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManager.swift; sourceTree = "<group>"; };
+		C7A2711B2FB84E81000CD251 /* TimerAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerAttributes.swift; sourceTree = "<group>"; };
+		C7A271232FB84ED4000CD251 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C7A271252FB84ED5000CD251 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C7A2713E2FB85492000CD251 /* brain-switchingApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "brain-switchingApp-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C71315EB2FB86156008A01AB /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C71315DA2FB86153008A01AB /* TimerWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		C71315DE2FB86153008A01AB /* TimerWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (C71315EB2FB86156008A01AB /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = TimerWidget; sourceTree = "<group>"; };
+		C7A2710C2FB84A18000CD251 /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		04FE7A6B2DD1236500D51E3C /* Frameworks */ = {
@@ -83,22 +117,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C71315D82FB86153008A01AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C71315DD2FB86153008A01AB /* SwiftUI.framework in Frameworks */,
+				C71315DC2FB86153008A01AB /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		046A85802DD57F3100B8CF6E /* Notification */ = {
-			isa = PBXGroup;
-			children = (
-				046A85812DD57FAF00B8CF6E /* TimeDelayNotification.swift */,
-			);
-			name = Notification;
-			path = Services/Notification;
-			sourceTree = "<group>";
-		};
 		04888B852DD23CC000366789 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				04888B862DD23CDF00366789 /* Jadwal.swift */,
+				C7A2711B2FB84E81000CD251 /* TimerAttributes.swift */,
+				04888B862DD23CDF00366789 /* Models.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -109,6 +144,8 @@
 				04FE7A702DD1236500D51E3C /* brain_switchingApp */,
 				04FE7A842DD1236600D51E3C /* brain_switchingAppTests */,
 				04FE7A8E2DD1236600D51E3C /* brain_switchingAppUITests */,
+				C71315DE2FB86153008A01AB /* TimerWidget */,
+				C7A271222FB84ED4000CD251 /* Frameworks */,
 				04FE7A6F2DD1236500D51E3C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,6 +156,7 @@
 				04FE7A6E2DD1236500D51E3C /* brain_switchingApp.app */,
 				04FE7A812DD1236600D51E3C /* brain_switchingAppTests.xctest */,
 				04FE7A8B2DD1236600D51E3C /* brain_switchingAppUITests.xctest */,
+				C71315DB2FB86153008A01AB /* TimerWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -126,12 +164,11 @@
 		04FE7A702DD1236500D51E3C /* brain_switchingApp */ = {
 			isa = PBXGroup;
 			children = (
-				046A85802DD57F3100B8CF6E /* Notification */,
+				C7A2713E2FB85492000CD251 /* brain-switchingApp-Info.plist */,
+				C7A2710C2FB84A18000CD251 /* Views */,
 				04888B852DD23CC000366789 /* Models */,
-				04FE7A9E2DD1272400D51E3C /* ItemViews */,
+				04FE7A9E2DD1272400D51E3C /* ViewModels */,
 				04FE7A712DD1236500D51E3C /* brain_switchingAppApp.swift */,
-				04FE7A732DD1236500D51E3C /* ContentView.swift */,
-				04FE7A752DD1236500D51E3C /* Item.swift */,
 				04FE7A772DD1236600D51E3C /* Assets.xcassets */,
 				04FE7A792DD1236600D51E3C /* brain_switchingApp.entitlements */,
 				04FE7A7A2DD1236600D51E3C /* Preview Content */,
@@ -164,15 +201,21 @@
 			path = brain_switchingAppUITests;
 			sourceTree = "<group>";
 		};
-		04FE7A9E2DD1272400D51E3C /* ItemViews */ = {
+		04FE7A9E2DD1272400D51E3C /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				04FE7A9F2DD1274F00D51E3C /* TimeDelayView.swift */,
-				04FE7AA12DD127C500D51E3C /* CalendarHeaderView.swift */,
-				04FE7AA32DD127FD00D51E3C /* TaskCardView.swift */,
-				04888B882DD23D3900366789 /* AddJadwalView.swift */,
+				C7A2710A2FB849C4000CD251 /* SessionManager.swift */,
 			);
-			path = ItemViews;
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C7A271222FB84ED4000CD251 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7A271232FB84ED4000CD251 /* WidgetKit.framework */,
+				C7A271252FB84ED5000CD251 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,10 +228,15 @@
 				04FE7A6A2DD1236500D51E3C /* Sources */,
 				04FE7A6B2DD1236500D51E3C /* Frameworks */,
 				04FE7A6C2DD1236500D51E3C /* Resources */,
+				C7A2713C2FB84ED7000CD251 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C71315E92FB86156008A01AB /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C7A2710C2FB84A18000CD251 /* Views */,
 			);
 			name = brain_switchingApp;
 			productName = brain_switchingApp;
@@ -231,6 +279,28 @@
 			productReference = 04FE7A8B2DD1236600D51E3C /* brain_switchingAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		C71315DA2FB86153008A01AB /* TimerWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C71315EC2FB86156008A01AB /* Build configuration list for PBXNativeTarget "TimerWidgetExtension" */;
+			buildPhases = (
+				C71315D72FB86153008A01AB /* Sources */,
+				C71315D82FB86153008A01AB /* Frameworks */,
+				C71315D92FB86153008A01AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C71315DE2FB86153008A01AB /* TimerWidget */,
+			);
+			name = TimerWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = TimerWidgetExtension;
+			productReference = C71315DB2FB86153008A01AB /* TimerWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -238,8 +308,8 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastSwiftUpdateCheck = 2640;
+				LastUpgradeCheck = 2640;
 				TargetAttributes = {
 					04FE7A6D2DD1236500D51E3C = {
 						CreatedOnToolsVersion = 15.4;
@@ -251,6 +321,9 @@
 					04FE7A8A2DD1236600D51E3C = {
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = 04FE7A6D2DD1236500D51E3C;
+					};
+					C71315DA2FB86153008A01AB = {
+						CreatedOnToolsVersion = 26.4;
 					};
 				};
 			};
@@ -270,6 +343,7 @@
 				04FE7A6D2DD1236500D51E3C /* brain_switchingApp */,
 				04FE7A802DD1236600D51E3C /* brain_switchingAppTests */,
 				04FE7A8A2DD1236600D51E3C /* brain_switchingAppUITests */,
+				C71315DA2FB86153008A01AB /* TimerWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -298,6 +372,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C71315D92FB86153008A01AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -305,14 +386,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				046A85822DD57FAF00B8CF6E /* TimeDelayNotification.swift in Sources */,
-				04FE7AA02DD1274F00D51E3C /* TimeDelayView.swift in Sources */,
-				04FE7AA42DD127FD00D51E3C /* TaskCardView.swift in Sources */,
-				04888B872DD23CDF00366789 /* Jadwal.swift in Sources */,
-				04FE7A742DD1236500D51E3C /* ContentView.swift in Sources */,
-				04FE7A762DD1236500D51E3C /* Item.swift in Sources */,
-				04888B892DD23D3900366789 /* AddJadwalView.swift in Sources */,
-				04FE7AA22DD127C500D51E3C /* CalendarHeaderView.swift in Sources */,
+				04888B872DD23CDF00366789 /* Models.swift in Sources */,
+				C7A2710B2FB849CF000CD251 /* SessionManager.swift in Sources */,
+				C7A2711C2FB84E82000CD251 /* TimerAttributes.swift in Sources */,
 				04FE7A722DD1236500D51E3C /* brain_switchingAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +410,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C71315D72FB86153008A01AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C71315EF2FB8616E008A01AB /* TimerAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -346,6 +430,11 @@
 			isa = PBXTargetDependency;
 			target = 04FE7A6D2DD1236500D51E3C /* brain_switchingApp */;
 			targetProxy = 04FE7A8C2DD1236600D51E3C /* PBXContainerItemProxy */;
+		};
+		C71315E92FB86156008A01AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C71315DA2FB86153008A01AB /* TimerWidgetExtension */;
+			targetProxy = C71315E82FB86156008A01AB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -476,6 +565,8 @@
 				DEVELOPMENT_TEAM = 6GXN5MP2UM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "brain-switchingApp-Info.plist";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -513,6 +604,8 @@
 				DEVELOPMENT_TEAM = 6GXN5MP2UM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "brain-switchingApp-Info.plist";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -626,6 +719,71 @@
 			};
 			name = Release;
 		};
+		C71315ED2FB86156008A01AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6GXN5MP2UM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TimerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "firdaus.brain-switchingApp.TimerWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C71315EE2FB86156008A01AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6GXN5MP2UM;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TimerWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TimerWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "firdaus.brain-switchingApp.TimerWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -661,6 +819,15 @@
 			buildConfigurations = (
 				04FE7A9C2DD1236600D51E3C /* Debug */,
 				04FE7A9D2DD1236600D51E3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C71315EC2FB86156008A01AB /* Build configuration list for PBXNativeTarget "TimerWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C71315ED2FB86156008A01AB /* Debug */,
+				C71315EE2FB86156008A01AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

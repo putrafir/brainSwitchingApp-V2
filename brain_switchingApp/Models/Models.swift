@@ -1,18 +1,27 @@
-//
-//  Jadwal.swift
-//  brain_switchingApp
-//
-//  Created by MacBook on 12/05/25.
-//
-import SwiftUI
+import Foundation
 
-struct Jadwal: Identifiable {
-    let id = UUID()
-    var namaJadwal: String
-    var tanggal: Date
-    var waktuMulai: Date
-    var waktuSelesai: Date
-    var tipe: String
-    var isCompleted: Bool = false
- 
+enum EnergyType: String, CaseIterable {
+    case logic = "Logika"
+    case creative = "Kreatif"
+    case physical = "Fisik"
+    case admin = "Administratif"
+}
+
+
+
+
+enum FocusDuration: Int, CaseIterable {
+    case short = 15
+    case medium = 30
+    case long = 60
+    
+    var label: String { return "\(self.rawValue) Menit" }
+    var inSeconds: Int { return self.rawValue * 60 }
+}
+
+enum SessionPhase {
+    case idle           // Di layar utama, memilih energi
+    case durationSelect // Memilih berapa lama akan fokus
+    case focusing       // Timer berjalan
+    case coolingDown    // Fase Time Delay (layar terkunci)
 }
