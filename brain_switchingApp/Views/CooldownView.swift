@@ -23,18 +23,21 @@ struct CooldownView: View {
                 .padding(.top, 30)
                 
                 // Timer Istirahat Bulat Kecil
-                ZStack {
-                    Circle()
-                        .stroke(Color.white.opacity(0.05), lineWidth: 8)
-                    Circle()
-                        .stroke(Color.green, lineWidth: 8)
-                        .shadow(color: .green.opacity(0.3), radius: 5)
-                    
-                    Text("05:00") // Sementara hardcode teks, nanti ikat ke sessionManager.timeRemaining
-                        .font(.system(.title, design: .monospaced, weight: .bold))
-                        .foregroundColor(.white)
-                }
-                .frame(width: 140, height: 140)
+              
+                                ZStack {
+                                    Circle()
+                                        .stroke(Color.white.opacity(0.05), lineWidth: 8)
+                                    Circle()
+                                        .stroke(Color.green, lineWidth: 8)
+                                        .shadow(color: .green.opacity(0.3), radius: 5)
+                                    
+                                    // GANTI BAGIAN INI:
+                                    Text(sessionManager.timeString(from: sessionManager.timeRemaining))
+                                        .font(.system(.title, design: .monospaced, weight: .bold))
+                                        .foregroundColor(.white)
+                                        .monospacedDigit() // Tambahan agar teks angka tidak bergeser/goyang saat detiknya berubah
+                                }
+                                .frame(width: 140, height: 140)
                 
                 // --- FITUR UTAMA: KOTAK REKOMENDASI BRAIN SWITCHING ---
                 VStack(alignment: .leading, spacing: 16) {
